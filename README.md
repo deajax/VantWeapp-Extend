@@ -1,12 +1,8 @@
-# VantWeapp-Extend
-VantWeapp小程序组件扩展样式
-
-
 ## Field vertical
 
 ###### 输入框垂直排列
 
-<img src="/Users/hanbin/Library/Application Support/typora-user-images/image-20200824084047040.png" alt="image-20200824084047040" style="zoom: 33%;" />
+<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="zoom: 33%;" />
 
 Wxml:
 
@@ -66,7 +62,7 @@ Less:
 
 ###### Block Cell
 
-<img src="/Users/hanbin/Library/Application Support/typora-user-images/image-20200824085143020.png" alt="image-20200824085143020" style="zoom: 33%;" />
+<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="zoom: 33%;" />
 
 Wxml:
 
@@ -124,7 +120,7 @@ Less:
 
 ###### Extend Navbar
 
-<img src="/Users/hanbin/Library/Application Support/typora-user-images/image-20200824104727019.png" alt="image-20200824104727019" style="zoom:33%;" />
+<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="zoom:33%;" />
 
 Wxml:
 
