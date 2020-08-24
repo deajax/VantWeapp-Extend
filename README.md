@@ -2,7 +2,7 @@
 
 ###### 输入框垂直排列
 
-<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="zoom: 33%;" />
+<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="width:200px" />
 
 Wxml:
 
@@ -62,7 +62,7 @@ Less:
 
 ###### Block Cell
 
-<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="zoom: 33%;" />
+<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="width:200px" />
 
 Wxml:
 
@@ -103,11 +103,12 @@ Less:
 
 	&.round {
 		.van-cell-group {
-			border-radius: 8px;
+			@round: 4px;
+			border-radius: @round;
 			overflow     : hidden;
 
 			&.van-hairline--top-bottom:after {
-				border-radius: 16px;
+				border-radius: @round*2;
 			}
 		}
 	}
@@ -120,8 +121,8 @@ Less:
 
 ###### Extend Navbar
 
-<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="zoom:33%;" />
-    
+<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="width:200px" />
+
 Wxml:
 
 ```
