@@ -2,7 +2,7 @@
 
 ###### 输入框垂直排列
 
-<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="width:200px" />
+<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="zoom: 33%;" />
 
 Wxml:
 
@@ -62,7 +62,7 @@ Less:
 
 ###### Block Cell
 
-<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="width:200px" />
+<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="zoom: 33%;" />
 
 Wxml:
 
@@ -121,7 +121,7 @@ Less:
 
 ###### Extend Navbar
 
-<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="width:200px" />
+<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="zoom:33%;" />
 
 Wxml:
 
@@ -169,4 +169,71 @@ Less:
 	}
 }
 ```
+
+​    
+
+## 统计数值
+
+###### Statistic
+
+![image-20200827175223451](http://resources.deajax.com/uPic/image-20200827175223451.png)
+
+Wxml:
+
+```
+<view class="statistic">
+	<van-grid column-num="2" border="{{ false }}">
+		<van-grid-item text="Active Users">
+			<view slot="icon" class="statistic-value">
+				<view class="s-value">112,893</view>
+				<view class="s-suffix">kg</view>
+			</view>
+		</van-grid-item>
+		<van-grid-item text="Unmerged">
+			<view slot="icon" class="statistic-value">
+				<view class="s-value">93</view>
+				<view class="s-suffix">/ 100</view>
+			</view>
+		</van-grid-item>
+	</van-grid>
+</view>
+```
+
+Less:
+
+```
+@font-face {
+	font-family: "Flama";
+	font-weight: normal;
+	font-style : normal;
+	src        : url('https://cdn.jsdelivr.net/gh/deajax/FontFace-CDN/src/fonts/Flama/Flama-Basic.otf') format('opentype');
+}
+
+.statistic {
+	.statistic-value {
+		.s-value {
+			display    : inline-block;
+			font-family: 'Flama';
+			font-size  : 18px;
+			font-weight: bold;
+		}
+
+		.s-suffix {
+			display    : inline-block;
+			font-family: 'Flama';
+			font-size  : 12px;
+			color      : fade(black, 65%);
+			margin-left: 2px;
+		}
+	}
+}
+```
+
+​      
+
+> 1、数值必须使用 slot="icon"
+>
+> 2、column-num 可以自定义
+>
+> 3、border 可以根据需要定义显示与否，默认显示
 
