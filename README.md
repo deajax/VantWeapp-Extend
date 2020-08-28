@@ -2,7 +2,7 @@
 
 ###### 输入框垂直排列
 
-<img src="https://i.loli.net/2020/08/24/VNGOlp1Rg65I4bf.png" alt="image-20200824084047040" style="zoom: 33%;" />
+<img src="http://resources.deajax.com/uPic/image-20200828101350201.png" alt="image-20200828101350201" style="zoom:50%;" />
 
 Wxml:
 
@@ -62,7 +62,7 @@ Less:
 
 ###### Block Cell
 
-<img src="https://i.loli.net/2020/08/24/6cCI1r2n5BGmeP8.png" alt="image-20200824085143020" style="zoom: 33%;" />
+<img src="http://resources.deajax.com/uPic/image-20200828101330181.png" alt="image-20200828101330181" style="zoom:50%;" />
 
 Wxml:
 
@@ -121,7 +121,7 @@ Less:
 
 ###### Page header
 
-<img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="zoom:33%;" />
+<img src="http://resources.deajax.com/uPic/image-20200828101302773.png" alt="image-20200828101302773" style="zoom:50%;" />
 
 Wxml:
 
@@ -164,7 +164,7 @@ Less:
 		line-height: 1.5715;
 	}
 
-	.nav-navbar-extra {
+	.van-navbar-extra {
 		display    : flex;
 		align-items: center;
 	}
@@ -177,7 +177,7 @@ Less:
 
 ###### Statistic
 
-![image-20200827175223451](http://resources.deajax.com/uPic/image-20200827175223451.png)
+<img src="http://resources.deajax.com/uPic/image-20200828101152235.png" alt="image-20200828101152235" style="zoom:50%;" />
 
 Wxml:
 
@@ -237,4 +237,197 @@ Less:
 > 2、column-num 可以自定义
 >
 > 3、border 可以根据需要定义显示与否，默认显示
+
+​    
+
+## 状态标签 (组件)
+
+###### Status
+
+<img src="http://resources.deajax.com/uPic/image-20200828101131035.png" alt="image-20200828101131035" style="zoom:50%;" />
+
+components Wxml:
+
+```
+<view class="van-status">
+	<view class="van-status-icon {{ status }}"></view>
+	<text>{{ text }}</text>
+</view>
+```
+
+components Js:
+
+```
+Component({
+	options: {
+		addGlobalClass: true
+	},
+	properties: {
+		status: {
+			type: String,
+			value: 'default'
+		},
+		text: String
+	},
+	data: {
+
+	},
+	methods: {
+
+	}
+})
+```
+
+components Less:
+
+```
+.van-status {
+
+	line-height: 20px;
+
+	.van-status-icon {
+		display       : inline-block;
+		width         : 6px;
+		height        : 6px;
+		border-radius : 50%;
+		vertical-align: 2px;
+
+		&.default {
+			background: #d9d9d9;
+		}
+
+		&.success {
+			background: #52c41a;
+		}
+
+		&.error {
+			background: #f5222d;
+		}
+
+		&.processing {
+			background: #1890ff;
+			animation : processing 3s infinite ease-out;
+		}
+
+		&.warning {
+			background: #faad14;
+		}
+	}
+
+	text {
+		font-size  : 14px;
+		color      : fade(black, 75%);
+		margin-left: 6px;
+	}
+}
+
+@keyframes processing {
+	0% {
+		box-shadow: 0 0 0 0 fade(#1890ff, 45%);
+	}
+
+	80% {
+		box-shadow: 0 0 0 4px fade(#1890ff, 0%);
+	}
+
+	100% {
+		box-shadow: 0 0 0 4px fade(#1890ff, 0%);
+	}
+}
+```
+
+Wxml:
+
+```
+<van-status status="success" text="成功" />
+
+<van-status status="error" text="错误" />
+
+<van-status status="default" text="默认" />
+
+<van-status status="processing" text="运行中" />
+
+<van-status status="warning" text="警告" />
+```
+
+​    
+
+> 共有5种状态颜色：success、error、default、processing、warning
+
+​    
+
+## 描述列表
+
+###### Descriptions
+
+<img src="http://resources.deajax.com/uPic/image-20200828101104940.png" alt="image-20200828101104940" style="zoom:50%;" />
+
+Wxml:
+
+```
+<view class="van-descriptions">
+	<van-cell-group title="User Info">
+		<van-cell title="UserName" value="Zhou Maomao" />
+		<van-cell title="Telephone" value="1810000000" />
+		<van-cell title="Live" value="Hangzhou, Zhejiang" />
+		<van-cell title="Remark" value="empty" />
+		<van-cell title="Address" value="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+	</van-cell-group>
+</view>
+```
+
+Less:
+
+```
+.van-descriptions {
+	position  : relative;
+	padding   : 8px 0;
+	background: white;
+
+	&::after {
+		position                : absolute;
+		box-sizing              : border-box;
+		-webkit-transform-origin: center;
+		transform-origin        : center;
+		content                 : " ";
+		pointer-events          : none;
+		top                     : auto;
+		right                   : 0;
+		bottom                  : 0;
+		left                    : 0;
+		border-bottom           : 1px solid #ebedf0;
+		-webkit-transform       : scaleY(.5);
+		transform               : scaleY(.5);
+	}
+
+	.van-cell-group {
+		&::after {
+			content: none !important;
+		}
+	}
+
+	.van-cell-group__title {
+		font-size  : 15px;
+		font-weight: 700;
+		color      : fade(black, 85%);
+		padding    : 8px 16px 12px;
+	}
+
+	.van-cell {
+		padding: 6px 16px;
+
+		&::after {
+			content: none !important;
+		}
+	}
+
+	.van-cell__title {
+		flex: 0 0 96px;
+	}
+
+	.van-cell__value {
+		text-align: left;
+	}
+}
+```
 
