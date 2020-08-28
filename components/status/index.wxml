@@ -1,0 +1,4 @@
+<view class="van-status">
+	<view class="van-status-icon {{ status }}"></view>
+	<text>{{ text }}</text>
+</view>

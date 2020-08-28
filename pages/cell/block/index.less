@@ -1,0 +1,21 @@
+.van-cell-block {
+	.van-cell-group {
+		margin: 0 12px 0;
+
+		&.van-hairline--top-bottom:after {
+			border-width: 1px;
+		}
+	}
+
+	&.round {
+		.van-cell-group {
+			@round: 4px;
+			border-radius: @round;
+			overflow     : hidden;
+
+			&.van-hairline--top-bottom:after {
+				border-radius: @round*2;
+			}
+		}
+	}
+}

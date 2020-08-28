@@ -1,0 +1,22 @@
+<!--pages/cell/block/index.wxml-->
+
+<!-- round 为是否圆角 -->
+<view class="van-cell-block round">
+	<van-cell-group title="分组1">
+		<van-cell title="单元格" value="内容" />
+		<van-cell title="单元格" value="内容" label="描述信息" border="{{ false }}" />
+	</van-cell-group>
+
+	<van-cell-group title="分组1">
+		<van-cell title="单元格" is-link />
+		<van-cell title="单元格" is-link value="内容" />
+		<van-cell title="单元格" is-link icon="location-o" />
+	</van-cell-group>
+
+	<!-- 不显示 group 的外边框 -->
+	<van-cell-group title="不显示边框" border="{{ false }}">
+		<van-cell title="单元格" is-link />
+		<van-cell title="单元格" is-link value="内容" />
+		<van-cell title="单元格" is-link icon="location-o" />
+	</van-cell-group>
+</view>

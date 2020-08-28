@@ -1,0 +1,18 @@
+<!--pages/statistic/index.wxml-->
+
+<view class="van-statistic">
+	<van-grid column-num="2" border="{{ false }}">
+		<van-grid-item text="Active Users">
+			<view slot="icon" class="van-statistic-content">
+				<view class="van-statistic-value">112,893</view>
+				<view class="van-statistic-suffix">kg</view>
+			</view>
+		</van-grid-item>
+		<van-grid-item text="Unmerged">
+			<view slot="icon" class="van-statistic-content">
+				<view class="van-statistic-value">93</view>
+				<view class="van-statistic-suffix">/ 100</view>
+			</view>
+		</van-grid-item>
+	</van-grid>
+</view>

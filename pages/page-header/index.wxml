@@ -1,0 +1,10 @@
+<!--pages/navbar/index.wxml-->
+
+<view class="van-page-header">
+	<van-nav-bar title="导航栏标题" safe-area-inset-top="{{ false }}">
+		<view slot="right" class="van-navbar-extra">
+			<navigator>按钮</navigator>
+			<navigator style="margin-left: 16px">按钮</navigator>
+		</view>
+	</van-nav-bar>
+</view>

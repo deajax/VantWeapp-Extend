@@ -1,0 +1,53 @@
+.van-status {
+
+	line-height: 20px;
+
+	.van-status-icon {
+		display       : inline-block;
+		width         : 6px;
+		height        : 6px;
+		border-radius : 50%;
+		vertical-align: 2px;
+
+		&.default {
+			background: #d9d9d9;
+		}
+
+		&.success {
+			background: #52c41a;
+		}
+
+		&.error {
+			background: #f5222d;
+		}
+
+		&.processing {
+			background: #1890ff;
+			animation : processing 3s infinite ease-out;
+		}
+
+		&.warning {
+			background: #faad14;
+		}
+	}
+
+	text {
+		font-size  : 14px;
+		color      : fade(black, 75%);
+		margin-left: 6px;
+	}
+}
+
+@keyframes processing {
+	0% {
+		box-shadow: 0 0 0 0 fade(#1890ff, 45%);
+	}
+
+	80% {
+		box-shadow: 0 0 0 4px fade(#1890ff, 0%);
+	}
+
+	100% {
+		box-shadow: 0 0 0 4px fade(#1890ff, 0%);
+	}
+}

@@ -1,0 +1,50 @@
+.van-descriptions {
+	position  : relative;
+	padding   : 8px 0;
+	background: white;
+
+	&::after {
+		position                : absolute;
+		box-sizing              : border-box;
+		-webkit-transform-origin: center;
+		transform-origin        : center;
+		content                 : " ";
+		pointer-events          : none;
+		top                     : auto;
+		right                   : 0;
+		bottom                  : 0;
+		left                    : 0;
+		border-bottom           : 1px solid #ebedf0;
+		-webkit-transform       : scaleY(.5);
+		transform               : scaleY(.5);
+	}
+
+	.van-cell-group {
+		&::after {
+			content: none !important;
+		}
+	}
+
+	.van-cell-group__title {
+		font-size  : 15px;
+		font-weight: 700;
+		color      : fade(black, 85%);
+		padding    : 8px 16px 12px;
+	}
+
+	.van-cell {
+		padding: 6px 16px;
+
+		&::after {
+			content: none !important;
+		}
+	}
+
+	.van-cell__title {
+		flex: 0 0 96px;
+	}
+
+	.van-cell__value {
+		text-align: left;
+	}
+}

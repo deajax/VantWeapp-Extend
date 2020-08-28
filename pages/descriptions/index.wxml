@@ -1,0 +1,11 @@
+<!--pages/descriptions/index.wxml-->
+
+<view class="van-descriptions">
+	<van-cell-group title="User Info">
+		<van-cell title="UserName" value="Zhou Maomao" />
+		<van-cell title="Telephone" value="1810000000" />
+		<van-cell title="Live" value="Hangzhou, Zhejiang" />
+		<van-cell title="Remark" value="empty" />
+		<van-cell title="Address" value="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+	</van-cell-group>
+</view>

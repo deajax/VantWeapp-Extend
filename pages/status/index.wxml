@@ -1,0 +1,19 @@
+<!--pages/status/index.wxml-->
+
+<van-cell-group>
+	<van-cell title="Success">
+		<van-status status="success" text="成功" />
+	</van-cell>
+	<van-cell title="Error">
+		<van-status status="error" text="错误" />
+	</van-cell>
+	<van-cell title="Default">
+		<van-status text="默认" />
+	</van-cell>
+	<van-cell title="Processing">
+		<van-status status="processing" text="运行中" />
+	</van-cell>
+	<van-cell title="Warning">
+		<van-status status="warning" text="警告" />
+	</van-cell>
+</van-cell-group>

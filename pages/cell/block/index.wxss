@@ -1,0 +1,1 @@
+.van-cell-block .van-cell-group{margin:0 12px 0}.van-cell-block .van-cell-group.van-hairline--top-bottom:after{border-width:1px}.van-cell-block.round .van-cell-group{border-radius:4px;overflow:hidden}.van-cell-block.round .van-cell-group.van-hairline--top-bottom:after{border-radius:8px}

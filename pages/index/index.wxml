@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+
+<van-cell-group>
+	<van-cell wx:for="{{ list }}" wx:key="id" title="{{ item.title }}" value="{{ item.value }}" label="{{ item.label }}" url="{{ item.url }}" border="{{ item.border }}" is-link center />
+</van-cell-group>
