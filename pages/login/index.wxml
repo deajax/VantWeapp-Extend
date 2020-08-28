@@ -1,0 +1,21 @@
+<!--pages/login/index.wxml-->
+<view class="login">
+	<view class="login-title">
+		<view class="login-main-title">登录</view>
+		<view class="login-sub-title">This is a subtitle</view>
+	</view>
+
+	<view class="login-box">
+		<view class="van-field-vertical">
+			<van-cell-group border="{{ false }}">
+				<van-field label="账号/手机号" placeholder="请输入" />
+				<van-field label="短信验证码" placeholder="请输入验证码">
+					<van-button slot="button" size="small">发送验证码</van-button>
+				</van-field>
+			</van-cell-group>
+		</view>
+		<view class="login-submit">
+			<van-button type="info" block>信息按钮</van-button>
+		</view>
+	</view>
+</view>

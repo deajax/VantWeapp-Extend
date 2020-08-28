@@ -1,0 +1,42 @@
+@import '../field/vertical/index';
+
+.login {
+	background: white;
+	padding   : 40px;
+	height    : 100vh;
+}
+
+.login-title {
+	margin-bottom: 32px;
+}
+
+.login-main-title {
+	font-size  : 28px;
+	font-weight: 700;
+	color      : fade(black, 85%);
+}
+
+.login-sub-title {
+	font-size: 14px;
+	color    : fade(black, 45%);
+}
+
+.login-box {
+	.van-cell {
+		padding: 12px 0;
+
+		&::after {
+			left : 0;
+			right: 0;
+		}
+	}
+}
+
+.login-submit {
+	margin-top: 40px;
+
+	.van-button {
+		font-size  : 15px;
+		font-weight: 700;
+	}
+}

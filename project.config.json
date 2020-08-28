@@ -113,6 +113,12 @@
 					"pathName": "pages/routes/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/index",
+					"pathName": "pages/login/index",
+					"scene": null
 				}
 			]
 		}

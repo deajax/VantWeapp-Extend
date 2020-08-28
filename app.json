@@ -8,7 +8,8 @@
 		"pages/descriptions/index",
 		"pages/status/index",
 		"pages/result/index",
-		"pages/routes/index"
+		"pages/routes/index",
+		"pages/login/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
