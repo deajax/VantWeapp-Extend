@@ -1,5 +1,10 @@
 <!--pages/routes/index.wxml-->
-<van-routes start="上海市浦东新区纳贤路701号百度上研大厦" start-label="上海研发中心" end="北京市海淀区上地东路1号盈创动力园区D座" end-label="鹏寰办公区" />
 
-<view style="padding: 16px 16px 8px">不显示边框</view>
-<van-routes start="上海市浦东新区纳贤路701号百度上研大厦" start-label="上海研发中心" end="北京市海淀区上地东路1号盈创动力园区D座" end-label="鹏寰办公区" border="{{ false }}" />
+<view class="van-routes">
+	<van-cell class="van-routes-start" title="上海市浦东新区纳贤路701号百度上研大厦" label="上海研发中心">
+		<remix-icon name="ri-map-pin-2-fill" slot="icon" class="van-routes-icon" color="#1989fa" />
+	</van-cell>
+	<van-cell class="van-routes-end" title="北京市海淀区上地东路1号盈创动力园区D座" label="鹏寰办公区">
+		<remix-icon name="ri-map-pin-2-fill" slot="icon" class="van-routes-icon" color="#07c160" />
+	</van-cell>
+</view>

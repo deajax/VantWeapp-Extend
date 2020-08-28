@@ -36,7 +36,7 @@ Page({
 			url: "/pages/result/index",
 			border: true
 		}, {
-			title: "路线（组件）",
+			title: "路线",
 			label: "Routes",
 			url: "/pages/routes/index"
 		}]

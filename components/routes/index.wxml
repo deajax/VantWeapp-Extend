@@ -1,9 +1,9 @@
 <!--components/routes/index.wxml-->
-<view class="van-routes {{ border ? 'border':''}}">
-	<van-cell class="van-routes-start" title="{{ start }}" label="{{ startLabel }}" wx:if="{{ start }}" border="{{ border }}">
+<view class="van-routes">
+	<van-cell custom-class="van-routes-start" title="{{ start }}" label="{{ startLabel }}" wx:if="{{ start }}">
 		<remix-icon name="ri-map-pin-2-fill" slot="icon" class="van-routes-icon" color="#1989fa" size="16" />
 	</van-cell>
-	<van-cell class="van-routes-end" title="{{ end }}" label="{{ endLabel }}" wx:if="{{ end }}" border="{{ false }}">
+	<van-cell custom-class="van-routes-end" title="{{ end }}" label="{{ endLabel }}" wx:if="{{ end }}" border="{{ false }}">
 		<remix-icon name="ri-map-pin-2-fill" slot="icon" class="van-routes-icon" color="#07c160" size="16" />
 	</van-cell>
 </view>

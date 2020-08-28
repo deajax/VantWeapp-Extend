@@ -30,7 +30,6 @@
 		"van-row": "@vant/weapp/row/index",
 		"van-col": "@vant/weapp/col/index",
 		"van-status": "components/status/index",
-		"van-result": "components/result/index",
-		"van-routes": "components/routes/index"
+		"van-result": "components/result/index"
 	}
 }
