@@ -117,19 +117,19 @@ Less:
 
 ​    
 
-## 拓展式标题栏
+## 页头
 
-###### Extend Navbar
+###### Page header
 
 <img src="https://i.loli.net/2020/08/24/sVx7MYUSOcok29u.png" alt="image-20200824104727019" style="zoom:33%;" />
 
 Wxml:
 
 ```
-<!-- 可以通过更改 van-navbar-extend 的背景颜色、文字颜色来改变导航的颜色 -->
-<view class="van-navbar-extend">
+<!-- 可以通过更改 van-page-header 的背景颜色、文字颜色来改变导航的颜色 -->
+<view class="van-page-header">
 	<van-nav-bar title="导航栏标题" safe-area-inset-top="{{ false }}">
-		<view slot="right" class="navbar-extra">
+		<view slot="right" class="van-navbar-extra">
 			<navigator>按钮</navigator>
 			<navigator style="margin-left: 16px">按钮</navigator>
 		</view>
@@ -140,8 +140,9 @@ Wxml:
 Less:
 
 ```
-.van-navbar-extend {
+.van-page-header {
 	background: white;
+	color     : #1f1f1f;
 
 	.van-nav-bar {
 		padding-bottom            : 4px;
@@ -156,14 +157,14 @@ Less:
 		text-align  : left;
 		font-size   : 18px;
 		box-sizing  : border-box;
-		color       : black;
+		color       : inherit;
 	}
 
 	.van-nav-bar__right {
 		line-height: 1.5715;
 	}
 
-	.navbar-extra {
+	.nav-navbar-extra {
 		display    : flex;
 		align-items: center;
 	}
@@ -181,18 +182,18 @@ Less:
 Wxml:
 
 ```
-<view class="statistic">
+<view class="van-statistic">
 	<van-grid column-num="2" border="{{ false }}">
 		<van-grid-item text="Active Users">
-			<view slot="icon" class="statistic-value">
-				<view class="s-value">112,893</view>
-				<view class="s-suffix">kg</view>
+			<view slot="icon" class="van-statistic-content">
+				<view class="van-statistic-value">112,893</view>
+				<view class="van-statistic-suffix">kg</view>
 			</view>
 		</van-grid-item>
 		<van-grid-item text="Unmerged">
-			<view slot="icon" class="statistic-value">
-				<view class="s-value">93</view>
-				<view class="s-suffix">/ 100</view>
+			<view slot="icon" class="van-statistic-content">
+				<view class="van-statistic-value">93</view>
+				<view class="van-statistic-suffix">/ 100</view>
 			</view>
 		</van-grid-item>
 	</van-grid>
@@ -209,16 +210,16 @@ Less:
 	src        : url('https://cdn.jsdelivr.net/gh/deajax/FontFace-CDN/src/fonts/Flama/Flama-Basic.otf') format('opentype');
 }
 
-.statistic {
-	.statistic-value {
-		.s-value {
+.van-statistic {
+	.van-statistic-content {
+		.van-statistic-value {
 			display    : inline-block;
 			font-family: 'Flama';
 			font-size  : 18px;
 			font-weight: bold;
 		}
 
-		.s-suffix {
+		.van-statistic-suffix {
 			display    : inline-block;
 			font-family: 'Flama';
 			font-size  : 12px;
