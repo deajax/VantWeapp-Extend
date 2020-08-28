@@ -33,7 +33,12 @@ Page({
 		}, {
 			title: "结果（组件）",
 			label: "Result",
-			url: "/pages/result/index"
+			url: "/pages/result/index",
+			border: true
+		}, {
+			title: "路线（组件）",
+			label: "Routes",
+			url: "/pages/routes/index"
 		}]
 	}
 })

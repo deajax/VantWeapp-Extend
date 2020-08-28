@@ -1,0 +1,46 @@
+.van-routes {
+	position  : relative;
+	background: white;
+
+	.van-routes-start,
+	.van-routes-end {
+		display: block;
+	}
+
+	.van-routes-start {
+		transform: translateY(4px);
+	}
+
+	.van-routes-end {
+		transform: translateY(-4px);
+	}
+
+	.van-routes-icon {
+		margin-right: 6px;
+	}
+
+	&.border {
+
+		.van-routes-start,
+		.van-routes-end {
+			transform: none;
+		}
+
+
+		&::after {
+			position         : absolute;
+			box-sizing       : border-box;
+			transform-origin : center;
+			content          : " ";
+			pointer-events   : none;
+			top              : -50%;
+			right            : -50%;
+			bottom           : -50%;
+			left             : -50%;
+			border           : 0 solid #eee;
+			border-width     : 1px 0;
+			transform        : scale(.5);
+			-webkit-transform: scale(.5);
+		}
+	}
+}
