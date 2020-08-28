@@ -38,7 +38,8 @@ Page({
 		}, {
 			title: "路线",
 			label: "Routes",
-			url: "/pages/routes/index"
+			url: "/pages/routes/index",
+			border: true
 		}, {
 			title: "登录模版",
 			label: "Login",
