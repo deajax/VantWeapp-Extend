@@ -7,10 +7,10 @@
 		<van-cell title="单元格" value="内容" label="描述信息" border="{{ false }}" />
 	</van-cell-group>
 
-	<van-cell-group title="分组1">
-		<van-cell title="单元格" is-link />
-		<van-cell title="单元格" is-link value="内容" />
-		<van-cell title="单元格" is-link icon="location-o" />
+	<van-cell-group title="输入框">
+		<van-field label="单元格" placeholder="请输入" />
+		<van-field icon="info-o" label="单元格" placeholder="请输入" />
+		<van-field label="单元格" placeholder="请选择" is-link readonly border="{{ false }}" />
 	</van-cell-group>
 
 	<!-- 不显示 group 的外边框 -->

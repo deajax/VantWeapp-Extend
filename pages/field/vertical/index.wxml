@@ -2,12 +2,11 @@
 
 <view class="van-field-vertical">
 	<van-cell-group title="分组1">
+		<van-field label="单元格" placeholder="请输入" />
 		<van-field icon="info-o" label="单元格" placeholder="请输入" />
-		<van-field icon="info-o" label="单元格" placeholder="请输入" is-link />
-		<van-field label="单元格" placeholder="请输入" is-link readonly />
-		<van-field icon="info-o" label="单元格" placeholder="请输入" is-link>
+		<van-field label="单元格" placeholder="请选择" is-link readonly />
+		<van-field label="单元格" placeholder="请输入" border="{{ false }}">
 			<van-button slot="button" size="small" type="primary">发送验证码</van-button>
 		</van-field>
-		<van-field label="单元格" placeholder="请输入" border="{{ false }}" />
 	</van-cell-group>
 </view>

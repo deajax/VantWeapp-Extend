@@ -1,2 +1,7 @@
+@import '/miniprogram_npm/@vant/weapp/common/index.wxss';
 /**app.wxss**/
 @import "/dist/app.wxss";
+
+.van-hairline--top {
+	margin: 1em 0;
+}

@@ -6,7 +6,8 @@
 		"pages/page-header/index",
 		"pages/statistic/index",
 		"pages/descriptions/index",
-		"pages/status/index"
+		"pages/status/index",
+		"pages/result/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
@@ -26,6 +27,7 @@
 		"van-grid-item": "@vant/weapp/grid-item/index",
 		"van-row": "@vant/weapp/row/index",
 		"van-col": "@vant/weapp/col/index",
-		"van-status": "components/status/index"
+		"van-status": "components/status/index",
+		"van-result": "components/result/index"
 	}
 }
