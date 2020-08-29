@@ -1,7 +1,5 @@
 <view class="van-result">
-	<view class="van-result-icon">
-		<view class="vanicon vanicon-{{ status }}"></view>
-	</view>
+	<icon type="{{ status }}" class="van-result-icon" size="80" />
 	<view class="van-result-title">{{ title }}</view>
 	<view class="van-result-subtitle" wx:if="{{ subtitle }}">{{ subtitle }}</view>
 	<view class="van-result-extra" wx:if="{{ useExtraSlot }}">
