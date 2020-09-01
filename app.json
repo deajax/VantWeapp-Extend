@@ -9,7 +9,8 @@
 		"pages/status/index",
 		"pages/result/index",
 		"pages/routes/index",
-		"pages/login/index"
+		"pages/login/index",
+		"pages/datatime/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
@@ -21,6 +22,9 @@
 	"sitemapLocation": "sitemap.json",
 	"usingComponents": {
 		"remix-icon": "components/remixicon/index",
+		"van-status": "components/status/index",
+		"van-result": "components/result/index",
+		"van-datebar": "components/datebar/index",
 		"van-button": "@vant/weapp/button/index",
 		"van-cell": "@vant/weapp/cell/index",
 		"van-cell-group": "@vant/weapp/cell-group/index",
@@ -30,7 +34,7 @@
 		"van-grid-item": "@vant/weapp/grid-item/index",
 		"van-row": "@vant/weapp/row/index",
 		"van-col": "@vant/weapp/col/index",
-		"van-status": "components/status/index",
-		"van-result": "components/result/index"
+		"van-tab": "@vant/weapp/tab/index",
+		"van-tabs": "@vant/weapp/tabs/index"
 	}
 }

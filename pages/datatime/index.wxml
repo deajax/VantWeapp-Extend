@@ -1,0 +1,7 @@
+<van-tabs line-width="32">
+	<van-tab title="日"></van-tab>
+	<van-tab title="月"></van-tab>
+	<van-tab title="年"></van-tab>
+</van-tabs>
+
+<van-datebar data="2020-08" bind:dateClick="dateClick" bind:leftClick="leftClick" bind:rightClick="rightClick" />

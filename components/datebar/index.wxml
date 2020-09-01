@@ -1,0 +1,12 @@
+
+<view class="van-datebar van-hairline--bottom">
+	<view class="datebar-icon--container">
+		<view class="datebar-icon datebar-icon--left" hover-class="active" bindtap="leftClick" />
+	</view>
+	<view class="datebar-data--container" hover-class="active" bindtap="dateClick">
+		{{ data }}
+	</view>
+	<view class="datebar-icon--container">
+		<view class="datebar-icon datebar-icon--right" hover-class="active" bindtap="rightClick" />
+	</view>
+</view>

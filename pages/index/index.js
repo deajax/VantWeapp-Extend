@@ -43,7 +43,12 @@ Page({
 		}, {
 			title: "登录模版",
 			label: "Login",
-			url: "/pages/login/index"
+			url: "/pages/login/index",
+			border: true
+		}, {
+			title: "统计日报日期选择（组件）",
+			label: "DetaTime Select",
+			url: "/pages/datatime/index"
 		}]
 	}
 })
