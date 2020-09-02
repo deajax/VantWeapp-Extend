@@ -10,7 +10,8 @@
 		"pages/result/index",
 		"pages/routes/index",
 		"pages/login/index",
-		"pages/datatime/index"
+		"pages/datatime/index",
+		"pages/panel-status/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
@@ -35,6 +36,7 @@
 		"van-row": "@vant/weapp/row/index",
 		"van-col": "@vant/weapp/col/index",
 		"van-tab": "@vant/weapp/tab/index",
-		"van-tabs": "@vant/weapp/tabs/index"
+		"van-tabs": "@vant/weapp/tabs/index",
+		"van-panel": "@vant/weapp/panel/index"
 	}
 }

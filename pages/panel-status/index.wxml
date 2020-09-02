@@ -1,0 +1,39 @@
+<van-panel title="标题" desc="描述信息" status="状态" header-class="status-success" use-footer-slot>
+	<view>内容</view>
+	<view slot="footer">
+		<van-button size="small">按钮</van-button>
+		<van-button size="small" type="danger">按钮</van-button>
+	</view>
+</van-panel>
+
+<van-panel title="标题" desc="描述信息" status="状态" header-class="status-processing" use-footer-slot>
+	<view>内容</view>
+	<view slot="footer">
+		<van-button size="small">按钮</van-button>
+		<van-button size="small" type="danger">按钮</van-button>
+	</view>
+</van-panel>
+
+<van-panel title="标题" desc="描述信息" status="状态" header-class="status-warning" use-footer-slot>
+	<view>内容</view>
+	<view slot="footer">
+		<van-button size="small">按钮</van-button>
+		<van-button size="small" type="danger">按钮</van-button>
+	</view>
+</van-panel>
+
+<van-panel title="标题" desc="描述信息" status="状态" header-class="status-error" use-footer-slot>
+	<view>内容</view>
+	<view slot="footer">
+		<van-button size="small">按钮</van-button>
+		<van-button size="small" type="danger">按钮</van-button>
+	</view>
+</van-panel>
+
+<van-panel title="标题" desc="描述信息" status="状态" header-class="status-default" use-footer-slot>
+	<view>内容</view>
+	<view slot="footer">
+		<van-button size="small">按钮</van-button>
+		<van-button size="small" type="danger">按钮</van-button>
+	</view>
+</van-panel>

@@ -49,6 +49,10 @@ Page({
 			title: "统计日报日期选择（组件）",
 			label: "DetaTime Select",
 			url: "/pages/datatime/index"
+		}, {
+			title: "面板状态",
+			label: "Panel Status",
+			url: "/pages/panel-status/index"
 		}]
 	}
 })

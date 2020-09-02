@@ -1,0 +1,63 @@
+.status-success {
+	.panel-index--van-panel__header-value {
+		color: #07c160;
+
+		&::before {
+			background-color: #07c160;
+		}
+	}
+}
+
+.status-processing {
+	.panel-index--van-panel__header-value {
+		color: #1989fa;
+
+		&::before {
+			background-color: #1989fa;
+		}
+	}
+}
+
+.status-warning {
+	.panel-index--van-panel__header-value {
+		color: #ff976a;
+
+		&::before {
+			background-color: #ff976a;
+		}
+	}
+}
+
+.status-error {
+	.panel-index--van-panel__header-value {
+		color: #ee0a24;
+
+		&::before {
+			background-color: #ee0a24;
+		}
+	}
+}
+
+.status-default {
+	.panel-index--van-panel__header-value {
+		color: #969799;
+
+		&::before {
+			background-color: #969799;
+		}
+	}
+}
+
+.van-cell[class*='status-'] {
+	.panel-index--van-panel__header-value {
+		&::before {
+			content       : '';
+			display       : inline-flex;
+			width         : 6px;
+			height        : 6px;
+			border-radius : 50%;
+			margin-right  : 6px;
+			vertical-align: 2px;
+		}
+	}
+}
