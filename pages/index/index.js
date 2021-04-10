@@ -48,11 +48,18 @@ Page({
 		}, {
 			title: "统计日报日期选择（组件）",
 			label: "DetaTime Select",
-			url: "/pages/datatime/index"
+			url: "/pages/datatime/index",
+			border: true
 		}, {
 			title: "面板状态",
 			label: "Panel Status",
-			url: "/pages/panel-status/index"
+			url: "/pages/panel-status/index",
+			border: true
+		}, {
+			title: "Remix图标",
+			label: "Remix Icon",
+			url: "/pages/remix/index",
+			border: true
 		}]
 	}
 })

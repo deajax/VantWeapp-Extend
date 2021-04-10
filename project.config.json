@@ -132,6 +132,14 @@
 					"id": -1,
 					"name": "pages/panel-status/index",
 					"pathName": "pages/panel-status/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/remix/index",
+					"pathName": "pages/remix/index",
+					"query": "",
 					"scene": null
 				}
 			]

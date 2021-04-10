@@ -1,0 +1,22 @@
+<van-tabs line-width="40">
+	<van-tab title="线性图标">
+		<block wx:for="{{ linegroup }}" wx:key="item">
+			<view class="icon-group-title">{{ item.title }}</view>
+			<van-grid column-num="3" border="{{ flase }}">
+				<van-grid-item text="{{ icon }}" wx:for="{{ item.icon }}" wx:for-item="icon">
+					<remix-icon name="{{ icon }}" slot="icon" />
+				</van-grid-item>
+			</van-grid>
+		</block>
+	</van-tab>
+	<van-tab title="面性图标">
+		<block wx:for="{{ fillgroup }}" wx:key="item">
+			<view class="icon-group-title">{{ item.title }}</view>
+			<van-grid column-num="3" border="{{ flase }}">
+				<van-grid-item text="{{ icon }}" wx:for="{{ item.icon }}" wx:for-item="icon">
+					<remix-icon name="{{ icon }}" slot="icon" />
+				</van-grid-item>
+			</van-grid>
+		</block>
+	</van-tab>
+</van-tabs>

@@ -11,7 +11,8 @@
 		"pages/routes/index",
 		"pages/login/index",
 		"pages/datatime/index",
-		"pages/panel-status/index"
+		"pages/panel-status/index",
+		"pages/remix/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

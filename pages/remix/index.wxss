@@ -1,0 +1,30 @@
+/* pages/remix/index.wxss */
+
+page {
+	background: white;
+}
+
+.icon-group-title {
+	padding    : 24px 16px 16px;
+	box-sizing : border-box;
+	font-weight: 700;
+}
+
+.icon-group-title::before {
+	content       : '';
+	display       : inline-block;
+	width         : 10px;
+	height        : 2px;
+	background    : #ee0a24;
+	margin-right  : 8px;
+	vertical-align: 4px;
+}
+
+.van-grid-item__text {
+	display      : block;
+	width        : 100%;
+	text-align   : center;
+	overflow     : hidden;
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+}
